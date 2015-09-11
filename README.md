@@ -1,13 +1,13 @@
 Montmartre
 ==========
 
-Presentation framework inspired by (and borrowing a thing or two, three, four, five from) (RevealJS)[https://github.com/hakimel/reveal.js] from (Hakim el Hattab)[http://lab.hakim.se/]. 
+Presentation framework inspired by (and borrowing a thing or two, three, four, five from) [RevealJS](https://github.com/hakimel/reveal.js) from [Hakim el Hattab](http://lab.hakim.se/). 
 
 - Use Montmartre whether your presentation is testing the classic boundaries of the presentation paradigm or you want your slide transitions to be controlled even when some of your slides contain complex logic and/or styling. 
 
 - Use Montmartre when your creation is sailing the ambiguous seas between a *presentation* and *website*, where one can reasonably argue that *some material in there is not really a slide* any more, but rather *something else*, i.e. a full-blown web page or form/control surface. 
 
-Montmartre uses (BeatMaster)[https://github.com/GerHobbelt/BeatMaster] as a fundament.
+Montmartre uses [BeatMaster](https://github.com/GerHobbelt/BeatMaster) as a fundament.
 
 
 ## What does using this bugger solve for me?
@@ -26,14 +26,14 @@ Montmartre uses (BeatMaster)[https://github.com/GerHobbelt/BeatMaster] as a fund
 >          Roger Waters (in: Too much rope)
 >
 
-Working on and with (RevealJS)[https://github.com/hakimel/reveal.js] (and several other presentation frameworks) uncovered a few hard to tackle issues:
+Working on and with [RevealJS](https://github.com/hakimel/reveal.js) (and several other presentation frameworks) uncovered a few hard to tackle issues:
 
 - for a large deck, the CSS3 animations become a big bother due to artifacts in the overview mode.
 
   Current Chrome still semi-randomly 'hides' many of your slides when the overview zooms out significantly, say to a width of a slide or 7. This problem is extant since 2011 or thereabouts already and still isn't fixed in Canary. 
 
   > 
-  > Do note that this is a *browser* (possibly in conjunction with the *graphics card driver*) issue, *not* a (RevealJS)[https://github.com/hakimel/reveal.js] issue: this issue pops up on many sufficiently complex pages with CSS3 animations.
+  > Do note that this is a *browser* (possibly in conjunction with the *graphics card driver*) issue, *not* a [RevealJS](https://github.com/hakimel/reveal.js) issue: this issue pops up on many sufficiently complex pages with CSS3 animations.
   > 
   > I have not been able to find a decent fix for this which consistently removes the issue. 
   >
@@ -46,11 +46,11 @@ Working on and with (RevealJS)[https://github.com/hakimel/reveal.js] (and severa
 
   My answer to this conundrum is:
 
-  + on the one side, to use a (BeatMaster)[https://github.com/GerHobbelt/BeatMaster]-like framework and **require** all components used to facilitate the desirable separation of 'repaint-triggering DOM inquiries' (such as `$element.offset()`) and 'DOM changing activity' (e.g. `$el.html(html_string)`) -- which may sound ridiculous but is a major factor to assist achieving good UI/UX performance for complex web apps anywhere, and 
+  + on the one side, to use a [BeatMaster](https://github.com/GerHobbelt/BeatMaster)-like framework and **require** all components used to facilitate the desirable separation of 'repaint-triggering DOM inquiries' (such as `$element.offset()`) and 'DOM changing activity' (e.g. `$el.html(html_string)`) -- which may sound ridiculous but is a major factor to assist achieving good UI/UX performance for complex web apps anywhere, and 
 
-  + on the other hand to fall back to JavaScript-driven animations rather than using the CSS3 animation feature, even while browsers may optimize the latter by using hardware acceleration. (This is similar to using direct CSS3 versus a JavaScript-centric animation framework like (GSAP)[http://greensock.com/gsap].)
+  + on the other hand to fall back to JavaScript-driven animations rather than using the CSS3 animation feature, even while browsers may optimize the latter by using hardware acceleration. (This is similar to using direct CSS3 versus a JavaScript-centric animation framework like [GSAP](http://greensock.com/gsap).)
 
-- as I wanted to keep the slides' JavaScript code manageable through using (RequireJS)[https://github.com/jrburke/requirejs] and related tooling, it clashed with the lazyloader in (RevealJS)[https://github.com/hakimel/reveal.js], so I modified (RevealJS)[https://github.com/hakimel/reveal.js] to be based on RequireJS instead. 
+- as I wanted to keep the slides' JavaScript code manageable through using [RequireJS](https://github.com/jrburke/requirejs) and related tooling, it clashed with the lazyloader in [RevealJS](https://github.com/hakimel/reveal.js), so I modified [RevealJS](https://github.com/hakimel/reveal.js) to be based on RequireJS instead. 
 
   This is a continuation of that work, which is more suitable for 'large applications development'.
 
