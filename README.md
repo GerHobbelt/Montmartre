@@ -65,4 +65,12 @@ Working on and with [RevealJS](https://github.com/hakimel/reveal.js) (and severa
 
 
 
+## Inspiration / Other Presentation Tools
 
+- DeckSet for iOS: https://decksetapp.com/cheatsheet/
+- Prezi: the science behind: https://prezi.com/the-science/
+- Marp: https://github.com/yhatt/marp + Electron: http://electron.atom.io/ --> compile to native. For Android/iOS see https://discuss.atom.io/t/electron-on-ios-android/18223 + https://github.com/electron/electron/issues/562#issuecomment-246502639
+  + DeckSet-to-Marp: https://github.com/yhatt/marp/issues/60 
+- fun DeckSet about NaN: https://github.com/LewisJEllis/nantalk/blob/master/deckset.md
+- The Dog and PonyShow: https://github.com/ponyshow/ponyshow 
+- RemarkJS: https://github.com/gnab/remark
